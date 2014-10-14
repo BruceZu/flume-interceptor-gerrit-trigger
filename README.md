@@ -7,7 +7,9 @@ flume-interceptor-gerrit-trigger
 Synopsis
 -------------------
 
-This is a flume interceptor for Gerrit Trigger.
+This is a flume interceptor for Gerrit Trigger. This adds some headers defined by [Gerrit Trigger] to event.
+
+[Gerrit Trigger]: https://wiki.jenkins-ci.org/display/JENKINS/Gerrit+Trigger
 
 Environments
 -------------------
