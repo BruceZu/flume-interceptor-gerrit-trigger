@@ -23,11 +23,14 @@ TO build library with gradle.
 
     ./gradlew build
 
-License
+How to setup in agent config
 -------------------
 
-The Apache Software License, Version 2.0
-
+```ini
+<Agent>.sources = <Source1>
+<Agent>.sources.<Source1>.interceptors = <Interceptor1>
+<Agent>.sources.<Source1>.interceptors.<Interceptor1>.type = jp.glassmoon.flume.intercepror.gerrit.GerritTrigger$Builder
+```
 
 Configuration
 -------------------
@@ -42,6 +45,11 @@ Configuration
 |port              | 29418
 |frontUrl          | **http://localhost/**
 |version           | **2.8**
+
+License
+-------------------
+
+The Apache Software License, Version 2.0
 
 Copyright
 -------------------
