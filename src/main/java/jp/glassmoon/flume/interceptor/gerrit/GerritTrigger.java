@@ -9,6 +9,11 @@ import java.util.HashMap;
 
 import static jp.glassmoon.flume.interceptor.gerrit.GerritTrigger.Constants.*;
 
+/**
+ * A class to intercept event from Gerrit.
+ *
+ * @author rinrinne (rinrin.ne@gmail.com)
+ */
 public class GerritTrigger implements Interceptor {
 
   private final Map<String, String> headers;
@@ -48,6 +53,11 @@ public class GerritTrigger implements Interceptor {
     return events;
   }
 
+  /**
+   * A builder for interceptor.
+   *
+   * @author rinrinne (rinrin.ne@gmail.com)
+   */
   public static class Builder implements Interceptor.Builder {
 
     private String name = DEFAULT_NAME;
@@ -73,12 +83,17 @@ public class GerritTrigger implements Interceptor {
     }
   }
 
+  /**
+   * A constants for interceptor.
+   *
+   * @author rinrinne (rinrin.ne@gmail.com)
+   */
   public static class Constants {
     public static final String NAME = "name";
     public static final String HOST = "host";
     public static final String SCHEME = "scheme";
     public static final String PORT = "port";
-    public static final String FRONTURL = "fronturl";
+    public static final String FRONTURL = "frontUrl";
     public static final String VERSION = "version";
 
     public static final String DEFAULT_NAME = "gerrit";
