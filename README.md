@@ -31,7 +31,7 @@ How to setup in agent config
 ```ini
 <Agent>.sources = <Source1>
 <Agent>.sources.<Source1>.interceptors = <Interceptor1>
-<Agent>.sources.<Source1>.interceptors.<Interceptor1>.type = jp.glassmoon.flume.intercepror.gerrit.GerritTrigger$Builder
+<Agent>.sources.<Source1>.interceptors.<Interceptor1>.type = jp.glassmoon.flume.interceptor.gerrit.GerritTrigger$Builder
 ```
 
 Configuration
