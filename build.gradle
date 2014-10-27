@@ -12,3 +12,9 @@ repositories {
 dependencies {
     compile 'org.apache.flume:flume-ng-core:1.5.0.1'
 }
+
+task release(type: Zip, dependsOn: assemble) {
+  from(jar.outputs.files) {
+    into "$archivesBaseName/lib"
+  }
+}

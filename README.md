@@ -21,9 +21,20 @@ Environments
 Build
 -------------------
 
-TO build library with gradle.
+To build library with gradle.
 
     ./gradlew build
+
+Install
+-------------------
+
+To release package with gradle.
+
+    ./gradlew release
+
+zip file is craeted into build/distributions/.
+
+You can install it by x extracting to $FLUME_HOME/plugins.d/.
 
 How to setup in agent config
 -------------------
