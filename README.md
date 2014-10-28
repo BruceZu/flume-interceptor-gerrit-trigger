@@ -4,6 +4,8 @@ flume-interceptor-gerrit-trigger
 * Author: rinrinne a.k.a. rin_ne
 * Repository: https://github.com/rinrinne/flume-interceptor-gerrit-trigger.git
 
+[![Build Status](https://travis-ci.org/rinrinne/flume-interceptor-gerrit-trigger.svg?branch=master)](https://travis-ci.org/rinrinne/flume-interceptor-gerrit-trigger)
+
 Synopsis
 -------------------
 
